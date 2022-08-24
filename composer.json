@@ -1,20 +1,29 @@
 {
-    "name": "authorizenet/authorizenet",
-    "type": "library",
-	"version": "2.0.2",
-    "description": "Official PHP SDK for Authorize.Net",
-    "keywords": ["authorizenet", "authorize.net", "payment", "ecommerce"],
-    "license": "proprietary",
-    "homepage": "http://developer.authorize.net",
-    "require": {
-        "php": ">=5.6",
-        "ext-curl": "*",
-        "ext-json": "*"
-    },
-    "autoload": {
-        "classmap": ["lib"]
-    },
-    "autoload-dev": {
-        "classmap": ["tests"]
-    }   
+  "name": "drfit/authorize.net-sdk-php",
+  "type": "library",
+  "version": "2.0.2",
+  "description": "Official PHP SDK for Authorize.Net (PHP 8.1)",
+  "keywords": [
+    "authorizenet",
+    "authorize.net",
+    "payment",
+    "ecommerce"
+  ],
+  "license": "proprietary",
+  "homepage": "http://developer.authorize.net",
+  "require": {
+    "php": ">=8.0",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "lib"
+    ]
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests"
+    ]
+  }
 }
