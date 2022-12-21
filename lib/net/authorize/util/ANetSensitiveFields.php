@@ -56,7 +56,7 @@ class ANetSensitiveFields
                 exit( "ERROR deserializing json from : " . $configFilePath  . "; Exception : " . $e->getMessage()); 
             }
         } else {
-            $sentitiveTags = array();
+            $sensitiveTags = array();
         }
         
         //Check for disableMask flag in case of client json.
