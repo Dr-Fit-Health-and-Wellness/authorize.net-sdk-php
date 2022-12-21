@@ -1,12 +1,12 @@
 <?php
 namespace net\authorize\api\controller;
 
-use net\authorize\api\contract\v1\AnetApiRequestType;
+use net\authorize\api\contract\v1\ANetApiRequestType;
 use net\authorize\api\controller\base\ApiOperationBase;
 
 class GetTransactionListController extends ApiOperationBase
 {
-    public function __construct(AnetApiRequestType $request)
+    public function __construct(ANetApiRequestType $request)
     {
         $responseType = 'net\authorize\api\contract\v1\GetTransactionListResponse';
         parent::__construct($request, $responseType);

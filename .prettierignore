@@ -1,0 +1,14 @@
+**/vendor
+node_modules
+static/javascript
+static/style
+tests/**/*.sql
+tests/coverage
+tests/output
+web/**/view/**/template/**/header*.twig
+web/*/view/javascript
+web/system/library/orm/Base
+web/system/library/orm/Map
+web/system/library/types/enums
+web/system/storage/cache
+web/system/storage/cache/template

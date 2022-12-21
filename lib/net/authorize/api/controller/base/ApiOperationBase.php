@@ -15,7 +15,7 @@ use \net\authorize\util\LogFactory as LogFactory;
 abstract class ApiOperationBase implements IApiOperation
 {
     /**
-     * @var \net\authorize\api\contract\v1\AnetApiRequestType
+     * @var \net\authorize\api\contract\v1\ANetApiRequestType
      */
     private $apiRequest = null;
 
@@ -42,11 +42,11 @@ abstract class ApiOperationBase implements IApiOperation
     /**
      * Constructor.
      *
-     * @param \net\authorize\api\contract\v1\AnetApiRequestType $request ApiRequest to send
+     * @param \net\authorize\api\contract\v1\ANetApiRequestType $request ApiRequest to send
      * @param string $responseType response type expected
      * @throws InvalidArgumentException if invalid request
      */
-    public function __construct(\net\authorize\api\contract\v1\AnetApiRequestType $request, $responseType)
+    public function __construct(\net\authorize\api\contract\v1\ANetApiRequestType $request, $responseType)
     {
         $this->logger = LogFactory::getLog(get_class($this));
 

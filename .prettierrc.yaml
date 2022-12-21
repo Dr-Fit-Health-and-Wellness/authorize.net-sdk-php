@@ -1,0 +1,23 @@
+# .prettierrc or .prettierrc.yaml
+trailingComma: "es5"
+tabWidth: 2
+useTabs: false
+semi: true
+singleQuote: false
+printWidth: 80
+proseWrap: "never"
+htmlWhitespaceSensitivity: "css"
+bracketSameLine: true
+
+# PHP-Specific
+phpVersion: "8.0"
+trailingCommaPHP: true
+braceStyle: "1tbs"
+
+overrides:
+  - files: "*.php"
+    options:
+      singleQuote: true
+  - files: "*.twig"
+    options:
+      parser: "html"

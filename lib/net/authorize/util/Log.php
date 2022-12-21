@@ -26,7 +26,7 @@ define("ANET_LOG_LEVEL",ANET_LOG_DEBUG);
  * @subpackage net\authorize\util
  */
 
-class Log
+class Log extends \stdClass
 {
     private $sensitiveXmlTags = NULL;
     private $logFile = '';

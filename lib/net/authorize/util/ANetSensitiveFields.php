@@ -1,7 +1,7 @@
 <?php
 namespace net\authorize\util;
 
-
+use Exception;
 
 define("ANET_SENSITIVE_XMLTAGS_JSON_FILE","AuthorizedNetSensitiveTagsConfig.json");
 define("ANET_SENSITIVE_DATE_CONFIG_CLASS",'net\authorize\util\SensitiveDataConfigType');
@@ -55,6 +55,8 @@ class ANetSensitiveFields
             catch(Exception $e){
                 exit( "ERROR deserializing json from : " . $configFilePath  . "; Exception : " . $e->getMessage()); 
             }
+        } else {
+            $sentitiveTags = array();
         }
         
         //Check for disableMask flag in case of client json.
